@@ -18,7 +18,7 @@ function reducer(state, action) {
         case "setStep":
             return { ...state, step: action.payload }
         case "reset":
-            return initialState
+            return initialState // { count: 0, step: 1 }
         default:
             throw new Error("Unknown action");
     }
