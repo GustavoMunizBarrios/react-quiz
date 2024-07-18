@@ -171,6 +171,7 @@ progress {
 
 .answer {
   transform: translateX(2rem);
+  color: var(--color-accent)
 }
 
 .result {
