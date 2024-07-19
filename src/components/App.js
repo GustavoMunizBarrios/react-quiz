@@ -6,6 +6,7 @@ import Error from './Error'
 import StartScreen from './StartScreen';
 import Question from './Question';
 import NextButton from './NextButton';
+import Progress from './Progress';
 
 const initialState = {
   questions: [],
@@ -72,7 +73,12 @@ export default function App() {
         {status === 'loading' && <Loader />}
         {status === 'error' && <Error />}
         {status === 'ready' && <StartScreen numQuestions={numQuestions} dispatch={dispatch} />}
-        {status === 'active' && <Question question={questions[index]} dispatch={dispatch} answer={answer} />}
+        {status === 'active' && (
+          <>
+            <Progress index={index} numQuestions={numQuestions} />
+            <Question question={questions[index]} dispatch={dispatch} answer={answer} />
+          </>
+        )}
         <NextButton dispatch={dispatch} answer={answer} />
       </Main>
     </div>
