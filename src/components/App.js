@@ -43,7 +43,9 @@ function reducer(state, action) {
       return {
         ...state, answer: action.payload,
         //   question selected === correct question (0, 1, 2, 3)
-        points: action.payload === question.correctOption ? state.points + question.points : question.points
+        points:
+          action.payload === question.correctOption
+            ? state.points + question.points : state.points
       }
 
     case 'nextQuestion':
@@ -54,6 +56,16 @@ function reducer(state, action) {
         ...state,
         status: "finished",
         highscore: state.points > state.highscore ? state.points : state.highscore
+      }
+
+    case 'restart':
+      return {
+        ...state,
+        status: "ready",
+        index: 0,
+        points: 0,
+        answer: null,
+        highscore: 0,
       }
 
     default:
@@ -98,8 +110,9 @@ export default function App() {
         )}
         {status === 'finished' && <FinishScreen
           points={points}
-          axPossiblePoints={maxPossiblePoints}
+          maxPossiblePoints={maxPossiblePoints}
           highscore={highscore}
+          dispatch={dispatch}
         />}
       </Main>
     </div>
