@@ -1,4 +1,4 @@
-export const quizData = {
+export const questionsReact = {
   questions: [
     {
       question: "Which is the most popular JavaScript framework?",
