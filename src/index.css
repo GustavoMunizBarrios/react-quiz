@@ -214,6 +214,12 @@ progress {
   padding: 1.35rem 2.8rem;
   border-radius: 100px;
 }
+.div-buttons {
+  display: flex; 
+  gap: 16px; 
+  margin: 16px 0; 
+  justify-content: center;
+}
 
 /* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
 .loader {
