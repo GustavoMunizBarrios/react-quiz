@@ -18,7 +18,7 @@ const initialState = {
   questions: [],
   // 'loading', 'error', 'ready', 'active', 'finished'
   status: "loading",
-  noTime: false,
+  time: false,
   index: 0,
   answer: null,
   points: 0,
@@ -44,12 +44,12 @@ function reducer(state, action) {
     case "noTimeLimit":
       return {
         ...state,
-        noTime: false,
+        time: false,
       };
     case "timeLimit":
       return {
         ...state,
-        noTime: true,
+        time: true,
       };
 
     case "start":
@@ -115,7 +115,7 @@ export default function App() {
       points,
       highscore,
       secondsRemaining,
-      noTime,
+      time,
     },
     dispatch,
   ] = useReducer(reducer, initialState);
@@ -162,7 +162,7 @@ export default function App() {
             />
 
             <Footer>
-              {noTime && (
+              {time && (
                 <Timer
                   secondsRemaining={secondsRemaining}
                   dispatch={dispatch}
