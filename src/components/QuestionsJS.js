@@ -1,0 +1,436 @@
+export const questionsJS = {
+  questions: [
+    {
+      question: "¿Qué es JavaScript?",
+      options: [
+        "Un lenguaje de marcado",
+        "Un lenguaje de programación",
+        "Una base de datos",
+        "Un sistema operativo",
+      ],
+      correctOption: 1,
+      points: 10,
+    },
+    {
+      question: "¿Cuál de las siguientes es una característica de JavaScript?",
+      options: [
+        "Es estáticamente tipado",
+        "Es orientado a objetos",
+        "Es solo para backend",
+        "No permite funciones",
+      ],
+      correctOption: 1,
+      points: 10,
+    },
+    {
+      question: "¿Cuál de estos es un tipo de dato en JavaScript?",
+      options: ["Integer", "Float", "Boolean", "Character"],
+      correctOption: 2,
+      points: 10,
+    },
+    {
+      question: "¿Cómo se declara una variable en JavaScript?",
+      options: [
+        "variable nombre",
+        "var nombre",
+        "let nombre",
+        "constante nombre",
+      ],
+      correctOption: 2,
+      points: 10,
+    },
+    {
+      question:
+        "¿Qué método se utiliza para convertir una cadena a un número entero?",
+      options: ["parseInt", "toInteger", "Number", "parseFloat"],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué propiedad devuelve la longitud de un arreglo?",
+      options: ["size", "count", "length", "index"],
+      correctOption: 2,
+      points: 10,
+    },
+    {
+      question: "¿Cuál es el valor de 'null' en JavaScript?",
+      options: [
+        "Un objeto",
+        "Un valor definido",
+        "Un valor vacío",
+        "Una función",
+      ],
+      correctOption: 2,
+      points: 10,
+    },
+    {
+      question: "¿Cómo se define una función en JavaScript?",
+      options: [
+        "def nombre()",
+        "function nombre()",
+        "func nombre()",
+        "fn nombre()",
+      ],
+      correctOption: 1,
+      points: 10,
+    },
+    {
+      question: "¿Qué operador se utiliza para comparar igualdad estricta?",
+      options: ["=", "==", "===", "!=="],
+      correctOption: 2,
+      points: 10,
+    },
+    {
+      question: "¿Qué es una promesa en JavaScript?",
+      options: [
+        "Una función síncrona",
+        "Un objeto que representa una operación asincrónica",
+        "Un método de un objeto",
+        "Una clase de ES6",
+      ],
+      correctOption: 1,
+      points: 10,
+    },
+    {
+      question: "¿Cómo se crea un objeto en JavaScript?",
+      options: ["let obj = {}", "let obj = []", "let obj = ()", "let obj = <>"],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué método de arreglo agrega un elemento al final?",
+      options: ["push", "pop", "shift", "unshift"],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué es 'NaN' en JavaScript?",
+      options: [
+        "Not a Null",
+        "No applicable Number",
+        "Not a Number",
+        "Null and Null",
+      ],
+      correctOption: 2,
+      points: 10,
+    },
+    {
+      question: "¿Qué palabra clave detiene un bucle?",
+      options: ["stop", "break", "end", "return"],
+      correctOption: 1,
+      points: 10,
+    },
+    {
+      question: "¿Qué operador se usa para la concatenación de cadenas?",
+      options: ["+", "&", "%", "*"],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué significa 'use strict'?",
+      options: [
+        "Modo estricto para declarar variables",
+        "Modo para optimizar funciones",
+        "Modo para ejecutar código con reglas estrictas",
+        "Modo para manejar excepciones",
+      ],
+      correctOption: 2,
+      points: 10,
+    },
+    {
+      question: "¿Cómo se accede a elementos de un arreglo?",
+      options: [
+        "Con notación de punto",
+        "Con corchetes",
+        "Con paréntesis",
+        "Con llaves",
+      ],
+      correctOption: 1,
+      points: 10,
+    },
+    {
+      question: "¿Qué es 'undefined' en JavaScript?",
+      options: [
+        "Un error de variable",
+        "Un tipo de objeto",
+        "El valor por defecto de una variable no inicializada",
+        "Un valor vacío",
+      ],
+      correctOption: 2,
+      points: 10,
+    },
+    {
+      question:
+        "¿Qué función devuelve el mayor entero menor o igual a un número?",
+      options: ["Math.floor", "Math.round", "Math.ceil", "Math.min"],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Cuál es el resultado de 'typeof null'?",
+      options: ["object", "null", "undefined", "string"],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué método convierte un arreglo en una cadena?",
+      options: ["join", "split", "concat", "toString"],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Cómo se agrega un elemento al inicio de un arreglo?",
+      options: ["push", "pop", "unshift", "shift"],
+      correctOption: 2,
+      points: 10,
+    },
+    {
+      question: "¿Qué significa 'this' en JavaScript?",
+      options: [
+        "El objeto global",
+        "El contexto actual de ejecución",
+        "El constructor de la clase",
+        "El argumento de la función",
+      ],
+      correctOption: 1,
+      points: 10,
+    },
+    {
+      question: "¿Qué es un callback?",
+      options: [
+        "Una función que se pasa como argumento a otra función",
+        "Un método del objeto global",
+        "Un error en el código",
+        "Un tipo de dato",
+      ],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué hace el método 'filter' de los arreglos?",
+      options: [
+        "Filtra elementos según una condición",
+        "Ordena elementos",
+        "Agrega elementos",
+        "Busca un elemento",
+      ],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué método detiene la propagación de un evento?",
+      options: [
+        "stopPropagation",
+        "preventDefault",
+        "cancelEvent",
+        "haltEvent",
+      ],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Cómo se declara una clase en JavaScript?",
+      options: [
+        "function Clase",
+        "class Clase",
+        "constructor Clase",
+        "object Clase",
+      ],
+      correctOption: 1,
+      points: 10,
+    },
+    {
+      question: "¿Qué método convierte JSON en un objeto?",
+      options: ["JSON.parse", "JSON.stringify", "JSON.object", "JSON.convert"],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué es un módulo en JavaScript?",
+      options: [
+        "Un archivo que agrupa código reutilizable",
+        "Un método para declarar variables",
+        "Una función especial",
+        "Un bucle especializado",
+      ],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué operador se utiliza para el operador ternario?",
+      options: ["?", ":", "=", "&"],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué método se utiliza para ordenar elementos en un arreglo?",
+      options: ["sort", "order", "arrange", "organize"],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué hace el método 'map' en un arreglo?",
+      options: [
+        "Aplica una función a cada elemento y devuelve un nuevo arreglo",
+        "Filtra elementos",
+        "Reduce el arreglo a un valor",
+        "Busca un elemento",
+      ],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué es un closure en JavaScript?",
+      options: [
+        "Una función que recuerda su entorno léxico",
+        "Un método de clase",
+        "Una función global",
+        "Una propiedad de un objeto",
+      ],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué palabra clave se usa para manejar errores?",
+      options: ["catch", "error", "try", "finally"],
+      correctOption: 2,
+      points: 10,
+    },
+    {
+      question: "¿Cómo se define un arreglo vacío?",
+      options: [
+        "let arr = null",
+        "let arr = {}",
+        "let arr = []",
+        "let arr = ()",
+      ],
+      correctOption: 2,
+      points: 10,
+    },
+    {
+      question: "¿Qué es el event loop en JavaScript?",
+      options: [
+        "Un ciclo que maneja las operaciones asincrónicas",
+        "Un bucle para iterar arreglos",
+        "Un método para ejecutar promesas",
+        "Un operador lógico",
+      ],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué hace 'setTimeout'?",
+      options: [
+        "Ejecuta una función después de un tiempo específico",
+        "Ejecuta una función inmediatamente",
+        "Repite una función continuamente",
+        "Cancela una ejecución programada",
+      ],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question:
+        "¿Qué propiedad del objeto 'window' representa el DOM principal?",
+      options: ["document", "body", "main", "html"],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué método convierte un número a una cadena?",
+      options: ["toString", "parseInt", "toFixed", "toNumber"],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question:
+        "¿Qué método se utiliza para verificar si un arreglo incluye un valor específico?",
+      options: ["contains", "has", "includes", "exists"],
+      correctOption: 2,
+      points: 10,
+    },
+    {
+      question: "¿Qué significa DOM en JavaScript?",
+      options: [
+        "Document Object Module",
+        "Document Object Model",
+        "Data Object Model",
+        "Document Operation Module",
+      ],
+      correctOption: 1,
+      points: 10,
+    },
+    {
+      question: "¿Cómo se detiene un intervalo creado con 'setInterval'?",
+      options: [
+        "stopInterval",
+        "clearInterval",
+        "cancelInterval",
+        "endInterval",
+      ],
+      correctOption: 1,
+      points: 10,
+    },
+    {
+      question: "¿Qué palabra clave se utiliza para crear una constante?",
+      options: ["constant", "const", "let", "var"],
+      correctOption: 1,
+      points: 10,
+    },
+    {
+      question: "¿Qué es el método 'reduce' en JavaScript?",
+      options: [
+        "Aplica una función a un acumulador y cada elemento del arreglo para reducirlo a un único valor",
+        "Ordena un arreglo",
+        "Filtra elementos de un arreglo",
+        "Convierte un arreglo en un objeto",
+      ],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question:
+        "¿Cuál es la sintaxis correcta para escribir un comentario en JavaScript?",
+      options: [
+        "/* comentario */",
+        "// comentario",
+        "<!-- comentario -->",
+        "# comentario",
+      ],
+      correctOption: 1,
+      points: 10,
+    },
+    {
+      question:
+        "¿Qué función se usa para redondear un número al entero más cercano?",
+      options: ["Math.round", "Math.floor", "Math.ceil", "Math.trunc"],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question:
+        "¿Qué palabra clave se utiliza para importar módulos en JavaScript?",
+      options: ["require", "export", "import", "include"],
+      correctOption: 2,
+      points: 10,
+    },
+    {
+      question:
+        "¿Qué método convierte un arreglo bidimensional en un arreglo plano?",
+      options: ["flat", "join", "concat", "reduce"],
+      correctOption: 0,
+      points: 10,
+    },
+    {
+      question: "¿Qué es una función flecha en JavaScript?",
+      options: [
+        "Una función compacta que utiliza la sintaxis '=>'",
+        "Una función que no puede recibir parámetros",
+        "Una función que solo retorna números",
+        "Una función que se ejecuta automáticamente al declararse",
+      ],
+      correctOption: 0,
+      points: 10,
+    },
+  ],
+};
