@@ -21,7 +21,13 @@ export default function StartScreen({ numQuestions, dispatch }) {
         className="btn btn-ui"
         onClick={() => dispatch({ type: "start" })}
       >
-        Let's start
+        Start React Quiz
+      </button>
+      <button
+        className="btn btn-ui"
+        onClick={() => dispatch({ type: "start" })}
+      >
+        Start JavaScript Quiz
       </button>
     </div>
   );

@@ -11,11 +11,13 @@ import FinishScreen from "./FinishScreen";
 import Footer from "./Footer";
 import Timer from "./Timer";
 import { questionsReact } from "./QuestionsReact";
+import { questionsJS } from "./QuestionsJS";
 
 const SEC_PER_QUESTION = 30;
 
 const initialState = {
   questions: [],
+  questionsJS: [],
   // 'loading', 'error', 'ready', 'active', 'finished'
   status: "loading",
   time: false,
@@ -33,6 +35,13 @@ function reducer(state, action) {
         // return a new state object
         ...state,
         questions: action.payload,
+        status: "ready",
+      };
+    case "dataReceivedJS":
+      return {
+        // return a new state object
+        ...state,
+        questionsJS: action.payload,
         status: "ready",
       };
 
@@ -134,6 +143,7 @@ export default function App() {
   }, []); */
   useEffect(function () {
     dispatch({ type: "dataReceived", payload: questionsReact.questions });
+    dispatch({ type: "dataReceivedJS", payload: questionsJS.questions });
   }, []);
 
   return (
