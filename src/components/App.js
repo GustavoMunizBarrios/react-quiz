@@ -67,6 +67,20 @@ function reducer(state, action) {
         status: "active",
         secondsRemaining: state.questions.length * SEC_PER_QUESTION,
       };
+    case "startReactQuiz":
+      return {
+        ...state,
+        questions: state.questions, // React questions
+        status: "active",
+        secondsRemaining: state.questions.length * SEC_PER_QUESTION,
+      };
+    case "startJSQuiz":
+      return {
+        ...state,
+        questions: state.questionsJS, // JS questions
+        status: "active",
+        secondsRemaining: state.questionsJS.length * SEC_PER_QUESTION,
+      };
 
     case "newAnswer":
       const question = state.questions.at(state.index);
