@@ -286,7 +286,12 @@ export const questionsReact = {
     {
       question:
         "¿Qué función de React se utiliza para clonar un elemento y añadirle propiedades?",
-      options: ["cloneElement", "useClone", "React.clone", "elementClone"],
+      options: [
+        "React.cloneElement",
+        "useClone",
+        "React.clone",
+        "elementClone",
+      ],
       correctOption: 0,
       points: 10,
     },
